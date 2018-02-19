@@ -1,0 +1,17 @@
+.series {
+  list-style: none;
+  display: flex;
+  height: calc(100vh - 165px);
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.series li {
+  width: 25%;
+  height: 34%;
+}
+
+.series li a {
+  width: 25%;
+}
