@@ -1,24 +1,16 @@
-import React from 'react'
-import './Series.css';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-class SeriesList extends React.Component {
+const SeriesList = ({ series }) => (
+  <ul className="series">
+    {
+      series.map(serie => (
+        <li key={serie.id} style={{ backgroundImage: `url(${serie.thumbnail.path}/standard_fantastic.${serie.thumbnail.extension})` }}>
+          <Link to={`/series/${serie.id}`}><span>{serie.title}</span></Link>
+        </li>
+      ))
+    }
+  </ul>
+)
 
-  render() {
-
-    return (
-      <ul class="series">
-        <li><a href="#"><img src="" /></a></li>
-        <li><a href="#"><img src="" /></a></li>
-        <li><a href="#"><img src="" /></a></li>
-        <li><a href="#"><img src="" /></a></li>
-        <li><a href="#"><img src="" /></a></li>
-        <li><a href="#"><img src="" /></a></li>
-        <li><a href="#"><img src="" /></a></li>
-        <li><a href="#"><img src="" /></a></li>
-        <li><a href="#"><img src="" /></a></li>
-      </ul>
-    )
-  }
-
-}
-export default SeriesList
+export default SeriesList;

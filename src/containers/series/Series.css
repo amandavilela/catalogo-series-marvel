@@ -1,0 +1,50 @@
+.series {
+  list-style: none;
+  display: flex;
+  height: calc(100vh - 165px);
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.series li {
+  width: 20%;
+  height: 34%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.series li a {
+  display: flex;
+  background: rgba(0, 0, 0, 0.6);
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  transition: all 0.2s linear;
+}
+
+.series li a:hover {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.series li a span {
+  display: inline-block;
+  margin: auto;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.serie-info {
+  color: #fff;
+  height: calc(100vh - 165px);
+  display: flex;
+}
+
+.serie-info div {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+}
