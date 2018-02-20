@@ -1,15 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-class Serie extends React.Component {
+const Serie = ({ serie }) => (
+  <div>
+    <img src={`${serie.thumbnail.path}/standard_fantastic.${serie.thumbnail.extension}`} alt={serie.title} />
+    <h1>{serie.title}</h1>
+    <p>{serie.startYear} - {serie.endYear}</p>
+    <p>{serie.description}</p>
+  </div>
+)
 
-  render() {
-
-    return (
-      <div>
-        <h1>Serie Infos</h1>
-      </div>
-    )
-  }
-}
-
-export default Serie
+export default Serie;

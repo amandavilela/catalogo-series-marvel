@@ -3,11 +3,16 @@
 }
 
 .App-logo {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.App-logo img {
   height: 80px;
 }
 
 .App-header {
-  background-color: #222;
   height: 165px;
   padding: 20px;
   color: white;
@@ -15,8 +20,15 @@
 
 .App-title {
   font-size: 1.5em;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .App-intro {
   font-size: large;
+}
+
+h1 {
+  font-weight: normal;
 }
